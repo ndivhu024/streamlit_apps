@@ -143,7 +143,7 @@ max_depth = st.slider(
 )
 
 # Create the figure
-fig, ax = plt.subplots(figsize=(4,3))
+fig, ax = plt.subplots(figsize=(12,6), dpi=300)
 #plt.tight_layout()
 
 # Plot the decision tree
