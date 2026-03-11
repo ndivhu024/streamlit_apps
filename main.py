@@ -148,7 +148,7 @@ fig, ax = plt.subplots(figsize=(12,6), dpi=300)
 
 # Plot the decision tree
 #set class in order of sorted(unique(y))
-plot_tree(classifier,max_depth=max_depth, feature_names=list(X.columns), class_names=['not terminated', 'terminated'], ax=ax)
+plot_tree(classifier,max_depth=max_depth,filled=True, feature_names=list(X.columns), class_names=['not terminated', 'terminated'], ax=ax)
 
 # Display in Streamlit
 st.pyplot(fig, use_container_width=True)
